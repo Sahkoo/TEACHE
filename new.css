@@ -1,0 +1,100 @@
+body {
+    text-align: center;
+    animation: coolGradient 10s infinite linear;
+    background-size: 200% 200%;
+    min-height: 100vh;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 40px;
+    font-style: normal;
+}
+
+@keyframes coolGradient {
+    0% {
+        background: linear-gradient(45deg, #ff5733, #c70039);
+    }
+    25% {
+        background: linear-gradient(45deg, #c70039, #900c3f);
+    }
+    50% {
+        background: linear-gradient(45deg, #900c3f, #581845);
+    }
+    75% {
+        background: linear-gradient(45deg, #581845, #1a1a1d);
+    }
+    100% {
+        background: linear-gradient(45deg, #1a1a1d, #ff5733);
+    }
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    gap: 2px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.cat {
+    background-color: blue;
+}
+
+.andriy {
+    background-color: red;
+}
+
+.andriy-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 20px;
+    padding: 15px;
+    margin: 15px;
+    cursor: pointer;
+}
+h1{
+    font-size: 50px;
+    color: white;
+}
+
+.return__button{
+    margin-top: 40px;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff5733, #c70039);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.return__button:hover {
+    background: linear-gradient(45deg, #c70039, #900c3f);
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+.return__button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
